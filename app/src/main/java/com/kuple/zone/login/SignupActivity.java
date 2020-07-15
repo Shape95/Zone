@@ -29,6 +29,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "SignupActivity";
     // Views
@@ -159,6 +161,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             userModel.setUserPassword(editTextPassword.getText().toString());
                             userModel.setPhoneNumber(editTextPhone.getText().toString());
                             userModel.setNickname(editTextNickname.getText().toString());
+                            userModel.setFavoritList(new ArrayList<String>());
 
                             firebaseStore.collection("users")
                                     .document(firebaseUser.getUid())
@@ -168,7 +171,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                                         public void onSuccess(Void aVoid) {
                                             // 이메일 인증 확인 메일을 전송합니다.
                                             sendEmail();
-
                                             finish();
                                             startActivity(new Intent(getApplicationContext(), EmailCheckActivity.class));
                                         }
