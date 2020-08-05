@@ -80,18 +80,18 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <ListView
-                android:id="@+id/kuple_feed"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feed_kuple"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/feedLayout"
                 android:scrollbars="vertical" />
 
             <Button
-                android:id="@+id/btnReadMore"
+                android:id="@+id/btn_read_more"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_below="@+id/kuple_feed"
+                android:layout_below="@+id/feed_kuple"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="70dp"
@@ -104,7 +104,7 @@
     </ScrollView>
 
     <ProgressBar
-        android:id="@+id/pbTmp"
+        android:id="@+id/pb_tmp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
