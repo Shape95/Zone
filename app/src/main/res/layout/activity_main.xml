@@ -20,15 +20,6 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/kuple" />
 
-            <ImageView
-                android:id="@+id/board_serch"
-                android:layout_marginLeft="350dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/serch"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
         </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
