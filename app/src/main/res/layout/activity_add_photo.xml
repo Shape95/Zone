@@ -6,25 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".board.AddPhotoActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="35dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/common_google_signin_btn_icon_dark" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <LinearLayout
-        android:id="@+id/toolbar_division"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_below="@+id/my_toolbar"
-        android:background="@color/colorDivision"
-        android:orientation="horizontal"></LinearLayout>
-
     <ImageView
         android:id="@+id/addphoto_image"
         android:layout_width="100dp"
